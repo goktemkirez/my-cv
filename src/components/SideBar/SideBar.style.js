@@ -32,7 +32,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: "#F4F5F7",
+    backgroundColor: "#000000",
   },
   drawerHeader: {
     width: "100%",
@@ -59,7 +59,7 @@ export const useStyles = makeStyles((theme) => ({
     position: "absolute",
     top: 32,
     right: 0,
-    backgroundColor: "#FAFBFC",
+    backgroundColor: "#000000",
     width: 24,
     height: 24,
   },
@@ -79,6 +79,10 @@ export const useStyles = makeStyles((theme) => ({
     }),
     marginLeft: 0,
   },
+  headerName:{
+    color:"#FFFFFF",
+    fontSize:16
+  },
   listDiv: {
     display: "flex",
     flexDirection: "column",
@@ -86,12 +90,18 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
   },
   sidebarButton1: {
-    backgroundColor: "#EBECF0",
+    backgroundColor: "#FFFFFF",
     borderRadius: 3,
     width: "100%",
     marginTop: 24,
   },
-  opemCloseBtn:{
+  sidebarButton2: {
+    backgroundColor: "#FFFFFF",
+    borderRadius: 3,
+    width: "100%",
+    marginTop: 24,
+  },
+  openCloseBtn:{
     height:20
   }
 }));

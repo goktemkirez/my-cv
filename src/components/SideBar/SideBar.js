@@ -76,56 +76,57 @@ export default function SideBar(props) {
 
   return (
     <>
-    <Drawer
-      className={classes.drawer}
-      variant="persistent"
-      anchor="left"
-      open={open}
-      classes={{
-        paper: classes.drawerPaper,
-      }}
-    >
-      <Container className={classes.drawerHeader}>
-        <Container className={classes.logoDiv}>
-          <Avatar
-            variant="rounded"
-            alt=" "
-            src={pp}
-            className={classes.img}
-          />
-          <Typography variant="h6">Orçun Göktem Kirez</Typography>
+      <Drawer
+        className={classes.drawer}
+        variant="persistent"
+        anchor="left"
+        open={open}
+        classes={{
+          paper: classes.drawerPaper,
+        }}
+      >
+        <Container className={classes.drawerHeader}>
+          <Container className={classes.logoDiv}>
+            <Avatar
+              variant="rounded"
+              alt=" "
+              src={pp}
+              className={classes.img}
+            />
+            <Typography className={classes.headerName} variant="h6">Orçun Göktem Kirez</Typography>
+          </Container>
         </Container>
-      </Container>
-      <Container className={classes.listDiv}>
-        <List>
-          {itemsList.map((item, index) => {
-            const { text, icon, onClick } = item;
-            return (
-              <ListItem
-                className={classes.sidebarButton1}
-                button
-                onClick={onClick}
-                key={text}
-              >
-                {icon && <ListItemIcon>{icon}</ListItemIcon>}
-                <ListItemText primary={text} />
-              </ListItem>
-            );
-          })}
-        </List>
-        <List>
-          {itemsListBottom.map((item, index) => {
-            const { text, icon, onClick } = item;
-            return (
-              <ListItem button onClick={onClick} key={text}>
-                {icon && <ListItemIcon>{icon}</ListItemIcon>}
-                <ListItemText primary={text} />
-              </ListItem>
-            );
-          })}
-        </List>
-      </Container>
-    </Drawer>
+        <Container className={classes.listDiv}>
+          <List>
+            {itemsList.map((item, index) => {
+              const { text, icon, onClick } = item;
+              return (
+                <ListItem
+                  className={classes.sidebarButton1}
+                  button
+                  onClick={onClick}
+                  key={text}
+                >
+                  {icon && <ListItemIcon>{icon}</ListItemIcon>}
+                  <ListItemText primary={text} />
+                </ListItem>
+              );
+            })}
+          </List>
+          <List>
+            {itemsListBottom.map((item, index) => {
+              const { text, icon, onClick } = item;
+              return (
+                <ListItem
+                  className={classes.sidebarButton2} button onClick={onClick} key={text}>
+                  {icon && <ListItemIcon>{icon}</ListItemIcon>}
+                  <ListItemText primary={text} />
+                </ListItem>
+              );
+            })}
+          </List>
+        </Container>
+      </Drawer>
     </>
   );
 }

@@ -4,8 +4,9 @@ import { Box } from "@material-ui/core";
 
 import { ROUTES, routes } from "../routes";
 import { useStyles } from "./App.style";
-import SideBar from "../components/SideBar";
+// import SideBar from "../components/SideBar";
 import PageWrapper from "../components/PageWrapper";
+import PersistentDrawerLeft from "../components/PersistentDrawerLeft";
 
 function App() {
   // const [isUserLoggedIn, setIsUserLoggedIn] = useState(true);
@@ -26,7 +27,8 @@ function App() {
             return (
               <>
                 {/* {!isPublic && <SideBar />} */}
-                <SideBar />
+                {/* <SideBar /> */}
+                <PersistentDrawerLeft />
                 <PageWrapper>
                   <Component {...props} />
                 </PageWrapper>
