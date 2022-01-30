@@ -13,6 +13,7 @@ import {
 } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 import {
+  FileCopyOutlined,
   PersonOutlined,
   WorkOutlined,
   CodeOutlined,
@@ -32,9 +33,9 @@ export default function SideBar(props) {
   let history = useHistory();
   const itemsList = [
     {
-      text: "Personal",
-      icon: <PersonOutlined />,
-      onClick: () => history.push(ROUTES.PERSONAL),
+      text: "Projects",
+      icon: <FileCopyOutlined />,
+      onClick: () => history.push(ROUTES.PROJECTS),
     },
     {
       text: "Experiences",
@@ -45,6 +46,11 @@ export default function SideBar(props) {
       text: "Skills",
       icon: <CodeOutlined />,
       onClick: () => history.push(ROUTES.SKILLS),
+    },
+    {
+      text: "Personal",
+      icon: <PersonOutlined />,
+      onClick: () => history.push(ROUTES.PERSONAL),
     },
   ];
   const itemsListBottom = [
@@ -87,7 +93,7 @@ export default function SideBar(props) {
             src={pp}
             className={classes.img}
           />
-          <Typography variant="h7">Orçun Göktem KİREZ</Typography>
+          <Typography variant="h6">Orçun Göktem Kirez</Typography>
         </Container>
       </Container>
       <Container className={classes.listDiv}>

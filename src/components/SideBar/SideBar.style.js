@@ -58,7 +58,7 @@ export const useStyles = makeStyles((theme) => ({
   drawerCloseButton: {
     position: "absolute",
     top: 32,
-    right: 0, //div sınırları dışında nasıl gösteririm?
+    right: 0,
     backgroundColor: "#FAFBFC",
     width: 24,
     height: 24,

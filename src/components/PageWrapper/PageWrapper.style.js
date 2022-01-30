@@ -4,5 +4,6 @@ export const useStyles = makeStyles((theme) => ({
   wrapper: {
     width: "100%",
     padding: 40,
+    backgroundColor: "#000000"
   },
 }));
