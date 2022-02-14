@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Box, Container } from "@material-ui/core";
-import { Skeleton } from "@material-ui/lab";
+import { Container } from "@material-ui/core";
 
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import LoadingBox from "../../components/LoadingBox/LoadingBox";
 import { useStyles } from "./Projects.style";
 
 import {items} from "../../assets/projectsJSON";
@@ -40,11 +40,7 @@ function Projects() {
   return (
     <Container className={classes.containerStyle}>
       {loading ? (
-        <Box>
-          <Skeleton animation="pulse" width="240">
-            loading
-          </Skeleton>
-        </Box>
+        <LoadingBox/>
       ) : (
         <>
           {projectData.map((data) => (
