@@ -5,7 +5,7 @@ import { Skeleton } from "@material-ui/lab";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { useStyles } from "./Projects.style";
 
-import {items} from "../../assets/jsonData";
+import {items} from "../../assets/projectsJSON";
 
 function Projects() {
   const classes = useStyles();
