@@ -66,6 +66,7 @@ export const useStyles = makeStyles((theme) => ({
   appBarLogo:{
     display:"flex",
     justifyContent:"center",
+    alignItems:'center',
     padding:0,
     margin:0,
   },
@@ -75,13 +76,16 @@ export const useStyles = makeStyles((theme) => ({
   appBarSocial:{
     display:'flex',
     justifyContent:"flex-end",
+    alignItems:'center',
     padding:0,
     margin:0,
   },
   appBarSocialImg:{
-    marginRight:10,
-    marginLeft:10,
-    cursor:"pointer"
+    marginRight:5,
+    marginLeft:5,
+    cursor:"pointer",
+    width:20,
+    height:20
   },
   sidebarButton:{
     color:"#D7DFE6",

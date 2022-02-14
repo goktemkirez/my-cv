@@ -20,8 +20,8 @@ function Projects() {
     try {
       setLoading(true);
 
-      let jsonData = require('../../assets/test.json');
-      console.log(jsonData);
+      // let jsonData = require('../../assets/test.json');
+      // console.log(jsonData);
       
       setProjectData(items);
       console.log(items);
