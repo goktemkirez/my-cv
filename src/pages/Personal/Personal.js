@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Box, Container } from "@material-ui/core";
 import { Skeleton } from "@material-ui/lab";
 
+import LoadingBox from "../../components/LoadingBox/LoadingBox";
 import { useStyles } from "./Personal.style";
 
 function Personal() {
@@ -34,11 +35,7 @@ function Personal() {
     <div>
       <Container className={classes.containerStyle}>
         {loading ? (
-          <Box>
-            <Skeleton animation="pulse" width="240">
-              loading
-            </Skeleton>
-          </Box>
+          <LoadingBox/>
         ) : (
           <>
           <h1>

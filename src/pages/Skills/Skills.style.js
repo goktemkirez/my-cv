@@ -6,7 +6,8 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     height: "100%",
-    backgroundColor: "#EBECF0",
+    backgroundColor: "#000000",
+    color:"#FFFFFF"
   },
   boxStyle: {
     display: "flex",
