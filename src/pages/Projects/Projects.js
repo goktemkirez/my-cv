@@ -19,14 +19,10 @@ function Projects() {
   const getDatas = async () => {
     try {
       setLoading(true);
-
-      // let jsonData = require('../../assets/test.json');
-      // console.log(jsonData);
       
       setProjectData(items);
       console.log(items);
-
-      // const result = await authAxios.get(`/me`);
+      
     } catch (error) {
       console.log("error", error);
     } finally {

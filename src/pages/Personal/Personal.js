@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container } from "@material-ui/core";
 
 import LoadingBox from "../../components/LoadingBox/LoadingBox";
+import Timeline from "../../components/Timeline/Timeline";
 import { useStyles } from "./Personal.style";
 
 function Personal() {
@@ -37,9 +38,7 @@ function Personal() {
           <LoadingBox/>
         ) : (
           <>
-          <h1>
-            Personal
-          </h1>
+            <Timeline/>
           </>
         )}
       </Container>
