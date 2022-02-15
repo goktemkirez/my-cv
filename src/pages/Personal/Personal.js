@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Box, Container } from "@material-ui/core";
-import { Skeleton } from "@material-ui/lab";
+import { Container } from "@material-ui/core";
 
 import LoadingBox from "../../components/LoadingBox/LoadingBox";
 import { useStyles } from "./Personal.style";
