@@ -4,7 +4,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 
 import { useStyles } from "./Timeline.style";
-import pp from '../../assets/images/pp.jpg';
+import noImage from '../../assets/images/noImage.png';
 
 import {personalJSON} from "../../assets/personalJSON";
 
@@ -16,10 +16,10 @@ const Timeline = (props) => {
     getDatas();
   }, []);
 
-  const getDatas = () => {
+  const getDatas = async () => {
     try {
       setPersonalData(personalJSON);
-      console.log(personalData);
+      console.log(personalJSON);
       
     } catch (error) {
       console.log("error", error);
@@ -44,7 +44,7 @@ const Timeline = (props) => {
           {data?.area2.map((item, i) => (
             <h5 key={i}>• {item}</h5>
           ))}
-          <img className={classes.timelineCardImage} src={pp} alt="" />
+          <img className={classes.timelineCardImage} src={noImage} alt="" />
         </VerticalTimelineElement>
       ))}
     </VerticalTimeline>
