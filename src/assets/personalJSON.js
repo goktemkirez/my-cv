@@ -5,7 +5,7 @@ export const personalJSON = [
         "title": "Started to work",
         "area1": "Durak Tekstil",
         "area2": ["Software Engineer", ".NET, React.JS, React Native", "Bursa"],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645106138/goktemkirez.com/images/durak_tmh1ht.jpg",
     },
     {
         "id": 14,
@@ -13,7 +13,7 @@ export const personalJSON = [
         "title": "Started to work",
         "area1": "Temiziş Ofset & Dijital",
         "area2": ["IT Specialist - Industrial Engineer", "Eskişehir"],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645106344/goktemkirez.com/images/temizis_axvoxk.jpg",
     },
     {
         "id": 12,
@@ -21,7 +21,7 @@ export const personalJSON = [
         "title": "Graduated from Anadolu University",
         "area1": "Bachelor Degree of Industrial Engineering",
         "area2": ["ECTS 2.48/4.00"],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645106711/goktemkirez.com/images/univMezuniyet_gmlipv.png",
     },
     {
         "id": 11,
@@ -29,7 +29,7 @@ export const personalJSON = [
         "title": "Intern",
         "area1": "Şahince Otomotiv",
         "area2": ["Logistics and Planning Department"],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645106342/goktemkirez.com/images/sahince_qwpvwl.jpg",
     },
     {
         "id": 10,
@@ -37,7 +37,7 @@ export const personalJSON = [
         "title": "Erasmus Intern",
         "area1": "ML Components GmbH",
         "area2": ["Sales Department"],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645106276/goktemkirez.com/images/erasmus_jpji79.jpg",
     },
     {
         "id": 13,
@@ -45,7 +45,7 @@ export const personalJSON = [
         "title": "Bachelor Graduation Project",
         "area1": "Anadolu University - Engineering Faculty - Industrial Engineering",
         "area2": ["Tracking, Examination And Analyzing Operator Eye Movements With Eye Tracking Device At The Final Quality Control Point Of The Refrigerator Mounting Line"],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645106478/goktemkirez.com/images/tez_kmczod.jpg",
     },
     {
         "id": 9,
@@ -53,7 +53,7 @@ export const personalJSON = [
         "title": "Elected Student Representative",
         "area1": "Anadolu University - Engineering Faculty - Industrial Engineering",
         "area2": [],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645106408/goktemkirez.com/images/temsilci_ufyn9g.jpg",
     },
     {
         "id": 8,
@@ -77,7 +77,7 @@ export const personalJSON = [
         "title": "Endüstri ve Verimlilik Kulübü",
         "area1": "Anadolu University Student Club",
         "area2": ["Active Membership", "9. Engineering and Management Academy"],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645106285/goktemkirez.com/images/evk_trvojw.jpg",
     },
     {
         "id": 5,
@@ -85,7 +85,7 @@ export const personalJSON = [
         "title": "Started University",
         "area1": "Anadolu University",
         "area2": ["Engineering Faculty - Industrial Engineering"],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645106590/goktemkirez.com/images/universite_tp49e7.jpg",
     },
     {
         "id": 4,
@@ -93,7 +93,7 @@ export const personalJSON = [
         "title": "Elected Student Representative",
         "area1": "Bursa Atatürk Anadolu Lisesi",
         "area2": [],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645106340/goktemkirez.com/images/liseTemsilcilik_pujfme.jpg",
     },
     {
         "id": 3,
@@ -101,7 +101,7 @@ export const personalJSON = [
         "title": "Started High School",
         "area1": "Bursa Atatürk Anadolu Lisesi",
         "area2": [],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645106291/goktemkirez.com/images/lise_ppqjmb.jpg",
     },
     {
         "id": 2,
@@ -117,6 +117,6 @@ export const personalJSON = [
         "title": "Birth",
         "area1": "",
         "area2": [],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645107102/goktemkirez.com/images/birth_ntrr0a.jpg",
     },
 ]

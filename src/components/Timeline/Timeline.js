@@ -44,7 +44,7 @@ const Timeline = (props) => {
           {data?.area2.map((item, i) => (
             <h5 key={i}>• {item}</h5>
           ))}
-          <img className={classes.timelineCardImage} src={noImage} alt="" />
+          <img className={classes.timelineCardImage} src={data?.img ? data?.img : noImage} alt="" />
         </VerticalTimelineElement>
       ))}
     </VerticalTimeline>

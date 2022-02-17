@@ -12,7 +12,6 @@ export const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   timelineCardImage:{
-    width:150,
     height:150
   }
 }));
