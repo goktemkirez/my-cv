@@ -17,7 +17,15 @@ export const useStyles = makeStyles((theme) => ({
   },
   skillBox:{
     position: "relative",
+    width:150,
+    height:150,
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
     "&:hover": {
+      "& $skillName": {
+        color:"#FFFFFF",
+      },
       "& $skillRating": {
         opacity: 1
       },
@@ -26,10 +34,14 @@ export const useStyles = makeStyles((theme) => ({
       }
     },
   },
+  skillName:{
+    color:"#D7DFE6",
+    transition: "0.5s",
+  },
   skillRating:{
     backgroundColor: "#000000",
     opacity: 0,
-    transition: .5,
+    transition: "0.5s",
     position: "absolute",
     top: "50%",
     left: "50%",
@@ -37,9 +49,9 @@ export const useStyles = makeStyles((theme) => ({
   },
   skillImage:{
     opacity: 1,
-    transition: 0.5,
+    transition: "0.5s",
     display: "block",
-    width: 150,
+    width: "100%",
     height: "auto",
   }
 }));
