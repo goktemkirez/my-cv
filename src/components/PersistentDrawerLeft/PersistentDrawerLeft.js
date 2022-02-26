@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import { useTheme } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -42,7 +42,23 @@ import { useStyles } from "./PersistentDrawerLeft.style";
 export default function PersistentDrawerLeft() {
   const classes = useStyles();
   const theme = useTheme();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    checkScreenSize();
+  }, []);
+
+  const checkScreenSize = async () => {
+    try {
+      let currentHideNav = window.innerWidth;
+      if (currentHideNav >= 760) {
+        setOpen(true);
+      }
+    } catch (error) {
+      console.log("error", error);
+    } finally {
+    }
+  };
 
   let history = useHistory();
 
@@ -86,7 +102,7 @@ export default function PersistentDrawerLeft() {
   };
 
   const handleDrawerClose = () => {
-    setOpen(false);  //false yap
+    setOpen(false);
   };
 
   return (
