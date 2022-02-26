@@ -42,7 +42,7 @@ import { useStyles } from "./PersistentDrawerLeft.style";
 export default function PersistentDrawerLeft() {
   const classes = useStyles();
   const theme = useTheme();
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   useEffect(() => {
     checkScreenSize();
@@ -51,8 +51,8 @@ export default function PersistentDrawerLeft() {
   const checkScreenSize = async () => {
     try {
       let currentHideNav = window.innerWidth;
-      if (currentHideNav >= 760) {
-        setOpen(true);
+      if (currentHideNav <= 760) {
+        setOpen(false);
       }
     } catch (error) {
       console.log("error", error);
