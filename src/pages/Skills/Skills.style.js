@@ -5,14 +5,9 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "100%",
+    flexDirection: "row",
+    flexWrap:"wrap",
     backgroundColor: "#000000",
     color:"#FFFFFF"
-  },
-  boxStyle: {
-    display: "flex",
-    flexDirection: "column",
-    backgroundColor: "#000000",
-    color: "#4DDA63",
   }
 }));
