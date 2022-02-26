@@ -23,6 +23,12 @@ export const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    color:'#D7DFE6',
+    backgroundColor:"#24292F",
+    "&:hover": {
+      color: "#FFFFFF",
+      backgroundColor:'#24292F'
+    },
   },
   hide: {
     display: 'none',
@@ -43,20 +49,22 @@ export const useStyles = makeStyles((theme) => ({
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
   },
-  // drawerHeaderCloseSidebarIcon:{
-  //   color:'#D7DFE6',
-  //   backgroundColor:'#24292F',
-  //   "&:hover": {
-  //     color: "#FFFFFF",
-  //     backgroundColor:'#24292F'
-  //   },
-  // },
+  drawerHeaderCloseSidebarIcon:{
+    color:'#D7DFE6',
+    backgroundColor:'#24292F',
+    "&:hover": {
+      color: "#FFFFFF",
+      backgroundColor:'#24292F'
+    },
+  },
+  //
   appBarContainer:{
     display:"flex",
     justifyContent:"space-between",
     padding:0,
     margin:0, 
     width: '100%',
+    maxWidth:'100%'
   },
   appBarHeader:{
     display:"flex",
