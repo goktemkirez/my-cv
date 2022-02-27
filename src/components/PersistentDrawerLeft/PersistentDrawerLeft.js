@@ -30,7 +30,7 @@ import {
 } from "@material-ui/icons";
 
 import { ROUTES } from "../../routes";
-import pp from '../../assets/images/pp.jpg';
+import pp from '../../assets/images/pp.jpeg';
 import myLogo from '../../assets/images/myLogo.jpg';
 import github from '../../assets/images/githubIcon.png';
 import linkedin from '../../assets/images/linkedinIcon.svg';

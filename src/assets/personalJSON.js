@@ -61,7 +61,7 @@ export const personalJSON = [
         "title": "Intern",
         "area1": "QNB Finansbank",
         "area2": ["Uludağ Branch"],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645962590/goktemkirez.com/images/qnb_oxbgz5.jpg",
     },
     {
         "id": 7,
@@ -69,7 +69,7 @@ export const personalJSON = [
         "title": "Intern",
         "area1": "TOFAŞ - Türk Otomobil Fabrikası A.Ş.",
         "area2": ["Production Department"],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645962590/goktemkirez.com/images/tofas_npmzlx.jpg",
     },
     {
         "id": 6,
@@ -109,7 +109,7 @@ export const personalJSON = [
         "title": "Started Primary School",
         "area1": "Altıparmak Fethi Açançiçek İlköğretim Okulu",
         "area2": [],
-        "img":"",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645962939/goktemkirez.com/images/ilkokul_dg5rhy.jpg",
     },
     {
         "id": 1,
