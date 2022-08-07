@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "@material-ui/core";
+import authAxios from '../../components/axios'
 
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import LoadingBox from "../../components/LoadingBox/LoadingBox";
 import { useStyles } from "./Projects.style";
 
-import {items} from "../../assets/projectsJSON";
+import {projectsJson} from "../../assets/projectsJSON";
 
 function Projects() {
   const classes = useStyles();
@@ -20,9 +21,9 @@ function Projects() {
     try {
       setLoading(true);
       
-      setProjectData(items);
-      console.log(items);
-      
+      const result = await authAxios.get(`/Projects`);
+      setProjectData(result.data ? result.data : projectsJson);
+      console.log(projectData);
     } catch (error) {
       console.log("error", error);
     } finally {
@@ -41,12 +42,12 @@ function Projects() {
         <>
           {projectData.map((data) => (
             <ProjectCard
-              key={data.id}
-              name={data?.name}
-              img={data?.img}
-              description={data?.description}
-              codeUrl={data?.code_url}
-              liveUrl={data?.live_url}
+              key={data.projectID}
+              name={data?.title}
+              img={data?.videoUrl}
+              description={data?.detail}
+              codeUrl={data?.codeUrl}
+              liveUrl={data?.liveUrl}
             />
           ))}
         </>
