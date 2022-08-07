@@ -14,24 +14,24 @@ function Projects() {
   const [projectData, setProjectData] = useState([]);
 
   useEffect(() => {
+    const getDatas = async () => {
+      try {
+        setLoading(true);
+        
+        const result = await authAxios.get(`/Projects`);
+        setProjectData(result.data ? result.data : projectsJson);
+      } catch (error) {
+        console.log("error", error);
+      } finally {
+        setTimeout(() => {
+          setLoading(false);
+        }, 1000);
+      }
+    };
+
     getDatas();
   }, []);
 
-  const getDatas = async () => {
-    try {
-      setLoading(true);
-      
-      const result = await authAxios.get(`/Projects`);
-      setProjectData(result.data ? result.data : projectsJson);
-      console.log(projectData);
-    } catch (error) {
-      console.log("error", error);
-    } finally {
-      setTimeout(() => {
-        setLoading(false);
-      }, 1000);
-    }
-  };
 
 
   return (
