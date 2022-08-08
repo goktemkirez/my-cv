@@ -6,6 +6,7 @@ export const StyledBox = styled(Box)(({ theme }) => ({
   color: "#FFFFFF",
   width: "100%",
   margin: 0,
+  marginTop: '20px',
   padding: 0,
   display: "flex",
   justifyContent: "center",

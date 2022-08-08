@@ -1,10 +1,9 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { styled } from '@mui/material/styles';
+import { Box } from '@mui/material';
 
-export const useStyles = makeStyles((theme) => ({
-  wrapper: {
-    width: "100%",
-    padding: 40,
-    marginTop: 40,
-    backgroundColor: "#000000"
-  },
+export const StyledBox = styled(Box)(({ theme }) => ({
+  width: "100%",
+  padding: 0,
+  backgroundColor: "#000000",
 }));
+
