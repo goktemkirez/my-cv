@@ -1,18 +1,16 @@
 import React from "react";
-import { Box } from "@material-ui/core";
-import { Skeleton } from "@material-ui/lab";
+import { Skeleton } from "@mui/material";
 
-import { useStyles } from "./LoadingBox.style";
+import { StyledBox } from "./LoadingBox.style";
 
 const LoadingBox = (props) => {
-  const classes = useStyles();
 
   return (
-  <Box className={classes.loadingBox}>
+  <StyledBox>
     <Skeleton animation="pulse" width="240">
       loading
     </Skeleton>
-  </Box>
+  </StyledBox>
   );
 };
 
