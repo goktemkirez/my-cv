@@ -1,10 +1,7 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { styled } from '@mui/material/styles';
+import { ImageList } from '@mui/material';
 
-export const useStyles = makeStyles((theme) => ({
-  containerStyle: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection:"column",
-  },
+//JUST FOR TEST
+export const StyledImageList = styled(ImageList)(({ theme }) => ({
+  
 }));

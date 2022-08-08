@@ -1,17 +1,10 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { styled } from '@mui/material/styles';
+import { CardMedia } from '@mui/material';
 
-export const useStyles = makeStyles((theme) => ({
-  root: {
-    width: 350,
-    margin: 10,
-    backgroundColor: "#24292F"
+//JUST FOR TEST
+export const StyledCardMedia = styled(CardMedia)(({ theme }) => ({
+  transition: 'all .2s ease-in-out',
+  '&:hover': {
+    transform: 'scale(1.05)',
   },
-  media: {
-    height: 350,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "contain"
-  },
-  content:{
-    color:"#D7DFE6"
-  }
 }));
