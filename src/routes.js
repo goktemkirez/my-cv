@@ -48,6 +48,6 @@ export const routes = [
     path: ROUTES.SKILLS,
     component: Skills,
     name: "Skills",
-    isPublic: false,
+    isPublic: true,
   },
 ];

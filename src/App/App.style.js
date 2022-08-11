@@ -1,7 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { styled } from '@mui/material/styles';
+import { Box } from '@mui/material';
 
-export const useStyles = makeStyles((theme) => ({
-  appWrapper: {
-    display: "flex",
-  },
+export const AppWrapper = styled(Box)(({ theme }) => ({
+  display: 'flex',
 }));
