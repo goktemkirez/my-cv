@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Box, ImageList, ImageListItem } from "@mui/material";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import { Box, ImageListItem } from "@mui/material";
+import Masonry from '@mui/lab/Masonry';
 import authAxios from '../../components/axios'
 
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
@@ -11,7 +11,6 @@ import { projectsJson } from "../../assets/projectsJSON";
 function Projects() {
   const [loading, setLoading] = useState(false);
   const [projectData, setProjectData] = useState([]);
-  const isMobile = useMediaQuery('(max-width:600px)');
 
   useEffect(() => {
     const getDatas = async () => {
@@ -38,12 +37,9 @@ function Projects() {
         <LoadingBox />
       ) : (
         <>
-          <ImageList variant="masonry"
-            sx={isMobile ?
-              { display: 'flex', flexDirection: 'column', }
-              : {}} cols={4} gap={20} >
+          <Masonry columns={{xs:1, sm:2, md:3, lg:4}} spacing={2} sx={{margin:0}}>
             {projectData.map((data) => (
-              <ImageListItem key={data.projectID} loading="lazy">
+              <ImageListItem key={data.projectID} >
                 <ProjectCard
                   key={data.projectID}
                   name={data?.title}
@@ -54,7 +50,7 @@ function Projects() {
                 />
               </ImageListItem>
             ))}
-          </ImageList>
+          </Masonry>
         </>
       )}
     </Box>
