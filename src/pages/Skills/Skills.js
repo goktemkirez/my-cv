@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { Container } from "@material-ui/core";
+import { useEffect, useState } from "react";
 
 import LoadingBox from "../../components/LoadingBox/LoadingBox";
 import SkillCard from "../../components/SkillCard/SkillCard";
-import { useStyles } from "./Skills.style";
+import { StyledBox } from "./Skills.style";
 
 import { skills } from "../../assets/skillsJSON";
 
 function Skills() {
-  const classes = useStyles();
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
 
@@ -33,7 +31,7 @@ function Skills() {
 
   return (
     <div>
-      <Container className={classes.containerStyle}>
+      <StyledBox>
         {loading ? (
           <LoadingBox />
         ) : (
@@ -48,7 +46,7 @@ function Skills() {
             ))}
           </>
         )}
-      </Container>
+      </StyledBox>
     </div>
   );
 }

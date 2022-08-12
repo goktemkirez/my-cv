@@ -1,13 +1,14 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { styled } from '@mui/material/styles';
+import { Box } from '@mui/material';
 
-export const useStyles = makeStyles((theme) => ({
-  containerStyle: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "row",
-    flexWrap:"wrap",
-    backgroundColor: "#000000",
-    color:"#FFFFFF"
-  }
+export const StyledBox = styled(Box)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  flexDirection: "row",
+  flexWrap:"wrap",
+  backgroundColor: "#000000",
+  color:"#FFFFFF"
 }));
+
+

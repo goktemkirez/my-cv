@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Container } from "@material-ui/core";
+import { useEffect, useState } from "react";
 
 import LoadingBox from "../../components/LoadingBox/LoadingBox";
 import Timeline from "../../components/Timeline/Timeline";
-import { useStyles } from "./Personal.style";
+import { StyledBox } from "./Personal.style";
 
 function Personal() {
-  const classes = useStyles();
   const [loading, setLoading] = useState(false);
   // const [profileData, setProfileData] = useState([]);
 
@@ -33,7 +31,7 @@ function Personal() {
 
   return (
     <div>
-      <Container className={classes.containerStyle}>
+      <StyledBox>
         {loading ? (
           <LoadingBox/>
         ) : (
@@ -41,7 +39,7 @@ function Personal() {
             <Timeline/>
           </>
         )}
-      </Container>
+      </StyledBox>
     </div>
   );
 }

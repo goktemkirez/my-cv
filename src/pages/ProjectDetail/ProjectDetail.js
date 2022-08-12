@@ -1,11 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { Box, Container } from "@material-ui/core";
-import { Skeleton } from "@material-ui/lab";
-
-import { useStyles } from "./ProjectDetail.style";
+import { useEffect, useState } from "react";
+import { Skeleton, Box } from "@mui/material";
 
 function ProjectDetail() {
-  const classes = useStyles();
   const [loading, setLoading] = useState(false);
   // const [profileData, setProfileData] = useState([]);
 
@@ -32,7 +28,7 @@ function ProjectDetail() {
 
 
   return (
-    <Container className={classes.containerStyle}>
+    <Box>
       {loading ? (
           <Box>
           <Skeleton animation="pulse" width="240">
@@ -44,7 +40,7 @@ function ProjectDetail() {
         <h1>Projects Detail</h1>
         </>
       )}
-    </Container>
+    </Box>
   );
 }
 

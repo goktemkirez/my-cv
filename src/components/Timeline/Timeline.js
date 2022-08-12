@@ -31,6 +31,7 @@ const Timeline = (props) => {
     <VerticalTimeline>
       {personalData.map((data) => (
         <VerticalTimelineElement
+          key={data.id}
           className="vertical-timeline-element--work"
           contentStyle={{ background: '#24292F', color: '#D7DFE6' }}
           contentArrowStyle={{ borderRight: '7px solid  #24292F' }}

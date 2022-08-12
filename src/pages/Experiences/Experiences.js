@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { Box, Container } from "@material-ui/core";
+import { useEffect, useState } from "react";
 
 import ExperienceCard from "../../components/ExperienceCard/ExperienceCard";
 import LoadingBox from "../../components/LoadingBox/LoadingBox";
-import { useStyles } from "./Experiences.style";
+import { StyledBox } from "./Experiences.style";
 
 import { experiencesJSON } from "../../assets/experiencesJSON";
 
 function Experiences() {
-  const classes = useStyles();
   const [loading, setLoading] = useState(false);
   const [experienceData, setexperienceData] = useState([]);
 
@@ -34,11 +32,11 @@ function Experiences() {
 
 
   return (
-    <Container className={classes.containerStyle}>
+    <StyledBox>
       {loading ? (
         <LoadingBox/>
       ) : (
-        <Box className={classes.cardContainer}>
+        <>
           {experienceData.map((data) => (
             <ExperienceCard
               key={data.id}
@@ -51,9 +49,9 @@ function Experiences() {
               website={data?.website}
             />
           ))}
-        </Box>
+        </>
       )}
-    </Container>
+    </StyledBox>
   );
 }
 
