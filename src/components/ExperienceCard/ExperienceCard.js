@@ -1,4 +1,4 @@
-import { Typography, CardActions, CardContent, Button} from "@mui/material";
+import { Typography, CardActions, CardContent, Button } from "@mui/material";
 
 import { StyledCard } from "./ExperienceCard.style";
 
@@ -20,13 +20,13 @@ export default function ProjectCard(props) {
         <Typography variant="body2" gutterBottom>
           {date}
         </Typography>
-          <br />
+        <br />
         <Typography>
           <u>Responsibilities</u>
         </Typography>
         <Typography variant="body2" component="div">
           {responsibilities.map((item, i) => (
-            <p key={i}>• {item}</p>
+            <p key={i}>• {item.responsibility}</p>
           ))}
         </Typography>
         <Typography>
@@ -34,20 +34,22 @@ export default function ProjectCard(props) {
         </Typography>
         <Typography variant="body2" component="div">
           {projects.map((item, i) => (
-            <p key={i}>• {item}</p>
+            <p key={i}>• {item.project}</p>
           ))}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button
-          variant="contained"
-          color="primary"
-          size="small"
-          target="_blank"
-          href={`${website}`}
-        >
-          Website
-        </Button>
+        {(website === null || website === "") ? null :
+          <Button
+            variant="contained"
+            color="primary"
+            size="small"
+            target="_blank"
+            href={`${website}`}
+          >
+            Website
+          </Button>
+        }
       </CardActions>
     </StyledCard>
   );
