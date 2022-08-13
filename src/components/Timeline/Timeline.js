@@ -1,15 +1,15 @@
-import React, {useEffect, useState} from "react";
-import PersonOutlined from '@material-ui/icons/PersonOutlined';
+import { useEffect, useState } from "react";
+import PersonOutlined from '@mui/icons-material/PersonOutlined';
+import { Typography } from "@mui/material";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import { useStyles } from "./Timeline.style";
+import { StyledAvatar } from "./Timeline.style";
 import noImage from '../../assets/images/noImage.png';
 
 import {personalJSON} from "../../assets/personalJSON";
 
 const Timeline = (props) => {
-  const classes = useStyles();
   const [personalData, setPersonalData] = useState([]);
 
   useEffect(() => {
@@ -39,13 +39,12 @@ const Timeline = (props) => {
           iconStyle={{ background: '#2196F3', color: '#fff' }}
           icon={<PersonOutlined />}
         >
-          <h3 className="vertical-timeline-element-title">{data?.title}</h3>
-          <br/>
-          <h4 className="vertical-timeline-element-subtitle">{data?.area1}</h4>
+          <Typography variant="h5" gutterBottom className="vertical-timeline-element-title">{data?.title}</Typography>
+          <Typography variant="h6" className="vertical-timeline-element-subtitle">{data?.area1}</Typography>
           {data?.area2.map((item, i) => (
-            <h5 key={i}>• {item}</h5>
+            <Typography variant="body2" key={i}>• {item}</Typography>
           ))}
-          <img className={classes.timelineCardImage} src={data?.img ? data?.img : noImage} alt="" />
+          <StyledAvatar variant="rounded" alt=" " src={data?.img ? data?.img : noImage}/>
         </VerticalTimelineElement>
       ))}
     </VerticalTimeline>

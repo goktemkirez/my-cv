@@ -15,7 +15,7 @@ const StyledAvatar = styled(Avatar)(({ theme }) => ({
     width: '26px', 
     height: '26px', 
     margin: '4px',
-    '@media (max-width:600px)': {
+    [theme.breakpoints.down('sm')]: {
         margin: '3px',
     },
 }));

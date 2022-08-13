@@ -30,24 +30,22 @@ function Skills() {
   };
 
   return (
-    <div>
-      <StyledBox>
-        {loading ? (
-          <LoadingBox />
-        ) : (
-          <>
-            {data.map((data) => (
-              <SkillCard
-                key={data.id}
-                name={data?.name}
-                score={data?.score}
-                img={data?.img}
-              />
-            ))}
-          </>
-        )}
-      </StyledBox>
-    </div>
+    <StyledBox>
+      {loading ? (
+        <LoadingBox />
+      ) : (
+        <>
+          {data.map((data) => (
+            <SkillCard
+              key={data.id}
+              name={data?.name}
+              score={data?.score}
+              img={data?.img}
+            />
+          ))}
+        </>
+      )}
+    </StyledBox>
   );
 }
 

@@ -1,29 +1,23 @@
-import React from "react";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
+import { Typography, CardActions, CardContent, Button} from "@mui/material";
 
-import { useStyles } from "./ExperienceCard.style";
+import { StyledCard } from "./ExperienceCard.style";
 
 export default function ProjectCard(props) {
   const { company, date, title, department, responsibilities, projects, website } = props;
-  const classes = useStyles();
 
   return (
-    <Card className={classes.root} variant="outlined">
+    <StyledCard variant="outlined">
       <CardContent>
-        <Typography className={classes.pos} color="textSecondary">
-          {company}
-        </Typography>
-        <Typography variant="h5" component="h2">
+        <Typography gutterBottom>
           {title}
         </Typography>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography variant="h5" component="h2">
+          {company}
+        </Typography>
+        <Typography gutterBottom>
           {department}
         </Typography>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography variant="body2" gutterBottom>
           {date}
         </Typography>
           <br />
@@ -46,7 +40,8 @@ export default function ProjectCard(props) {
       </CardContent>
       <CardActions>
         <Button
-          className={classes.websiteButton}
+          variant="contained"
+          color="primary"
           size="small"
           target="_blank"
           href={`${website}`}
@@ -54,6 +49,6 @@ export default function ProjectCard(props) {
           Website
         </Button>
       </CardActions>
-    </Card>
+    </StyledCard>
   );
 }

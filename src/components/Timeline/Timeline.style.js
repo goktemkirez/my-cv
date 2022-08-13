@@ -1,17 +1,10 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { styled } from '@mui/material/styles';
+import { Avatar } from '@mui/material';
 
-export const useStyles = makeStyles((theme) => ({
-  loadingBox:{
-    backgroundColor: "#24292F",
-    color: "#FFFFFF",
-    width:"100%",
-    margin:0,
-    padding:0,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  timelineCardImage:{
-    height:150
-  }
+export const StyledAvatar = styled(Avatar)(({ theme }) => ({
+  display: "block",
+  width: "50%",
+  height: "auto",
+  marginTop: '20px'
 }));
+

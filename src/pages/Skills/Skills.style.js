@@ -7,8 +7,6 @@ export const StyledBox = styled(Box)(({ theme }) => ({
   alignItems: "center",
   flexDirection: "row",
   flexWrap:"wrap",
-  backgroundColor: "#000000",
-  color:"#FFFFFF"
 }));
 
 

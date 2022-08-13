@@ -1,7 +1,6 @@
 import Experiences from "./pages/Experiences";
 import Personal from "./pages/Personal";
 import Projects from "./pages/Projects";
-import ProjectDetail from "./pages/ProjectDetail";
 import Skills from "./pages/Skills";
 
 export const ROUTES = {
@@ -9,7 +8,6 @@ export const ROUTES = {
   EXPERIENCES: "/experiences",
   PERSONAL: "/personal",
   PROJECTS: "/projects",
-  PROJECT_DETAIL: "/projects/:id",
   SKILLS: "/skills",
 };
 
@@ -36,12 +34,6 @@ export const routes = [
     path: ROUTES.PROJECTS,
     component: Projects,
     name: "Projects",
-    isPublic: true,
-  },
-  {
-    path: ROUTES.PROJECT_DETAIL,
-    component: ProjectDetail,
-    name: "Project Detail",
     isPublic: true,
   },
   {
