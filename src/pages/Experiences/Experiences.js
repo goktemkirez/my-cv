@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import authAxios from '../../components/axios'
+// import authAxios from '../../components/axios'
 
 import ExperienceCard from "../../components/ExperienceCard/ExperienceCard";
 import LoadingBox from "../../components/LoadingBox/LoadingBox";
@@ -10,16 +10,14 @@ import { experiencesJSON } from "../../assets/experiencesJSON";
 function Experiences() {
   const [loading, setLoading] = useState(false);
   const [experienceData, setexperienceData] = useState([]);
-  const [data, setData] = useState([]);
 
   useEffect(() => {
     const getDatas = async () => {
       try {
         setLoading(true);
 
-        const result = await authAxios.get(`/Experiences`);
-        setexperienceData(result.data ? result.data : experiencesJSON);
-        setData(result.data);
+        // const result = await authAxios.get(`/Experiences`);
+        setexperienceData(experiencesJSON);
       } catch (error) {
         console.log("error", error);
       } finally {
@@ -32,28 +30,21 @@ function Experiences() {
     getDatas();
   }, []);
 
-  useEffect(() => {
-    const logData = async () => {
-      console.log(data);
-    };
-    logData();
-  }, [data]);
-
   return (
     <StyledBox>
       {loading ? (
         <LoadingBox />
       ) : (
         <>
-          {experienceData.map((data) => (
+          {experienceData.sort((a, b) => a.sorting - b.sorting).map((data) => (
             <ExperienceCard
               key={data.experienceID}
               company={data?.company}
               date={data?.date}
               title={data?.title}
               department={data?.department}
-              responsibilities={data?.experienceResponsibilities}
-              projects={data?.experienceProjects}
+              responsibilities={data?.responsibilities}
+              projects={data?.projects || null }
               website={data?.website}
             />
           ))}

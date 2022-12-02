@@ -26,15 +26,16 @@ export default function ProjectCard(props) {
         </Typography>
         <Typography variant="body2" component="div">
           {responsibilities.map((item, i) => (
-            <p key={i}>• {item.responsibility}</p>
+            <p key={i}>• {item}</p>
           ))}
         </Typography>
+        {projects === null ? null :
         <Typography>
-          <u>Projects</u>
-        </Typography>
+           <u>Projects</u>
+        </Typography>}
         <Typography variant="body2" component="div">
           {projects.map((item, i) => (
-            <p key={i}>• {item.project}</p>
+            <p key={i}>• {item}</p>
           ))}
         </Typography>
       </CardContent>
