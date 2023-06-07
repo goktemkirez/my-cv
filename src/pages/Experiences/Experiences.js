@@ -36,7 +36,7 @@ function Experiences() {
         <LoadingBox />
       ) : (
         <>
-          {experienceData.sort((a, b) => a.sorting - b.sorting).map((data) => (
+          {experienceData.sort(function(a, b){return b.experienceID - a.experienceID}).map((data) => (
             <ExperienceCard
               key={data.experienceID}
               company={data?.company}

@@ -86,9 +86,9 @@ export const experiencesJSON = [
     ],
   },
   {
-    experienceID: "14",
+    experienceID: 14,
     company: "Harput Holding",
-    date: "September 2022 - present",
+    date: "September 2022 - March 2023",
     title: "Frontend Developer",
     department: "Information Technology",
     website: "https://www.harputholding.com.tr/",
@@ -101,6 +101,20 @@ export const experiencesJSON = [
       "Harput ERP (Enterprise Resource Planning)",
       "Limon CRM (Customer Relationship Management)",
       "Scada is an app that developed to get data from food production machine and to provide production report",
+    ],
+  },
+  {
+    experienceID: 16,
+    company: "Hogarth Worldwide",
+    date: "March 2023 - present",
+    title: "Frontend Developer",
+    department: "Elementary Department",
+    website: "https://www.hogarth.com/",
+    sorting: "87",
+    responsibilities: [
+      "Frontend development of customers' websites and web apps",
+    ],
+    projects: [
     ],
   },
 ];

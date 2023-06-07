@@ -8,31 +8,34 @@ export default function ProjectCard(props) {
   return (
     <StyledCard variant="outlined">
       <CardContent>
-        <Typography gutterBottom>
+        <Typography variant="h5" gutterBottom>
           {title}
         </Typography>
-        <Typography variant="h5" component="h2">
+        <Typography variant="h5">
           {company}
         </Typography>
-        <Typography gutterBottom>
+        <Typography variant="body2" gutterBottom>
           {department}
         </Typography>
         <Typography variant="body2" gutterBottom>
           {date}
         </Typography>
         <br />
+        {responsibilities?.length > 0 &&
         <Typography>
           <u>Responsibilities</u>
         </Typography>
+        }
         <Typography variant="body2" component="div">
           {responsibilities.map((item, i) => (
             <p key={i}>• {item}</p>
           ))}
         </Typography>
-        {projects === null ? null :
+        {projects?.length > 0 &&
         <Typography>
            <u>Projects</u>
-        </Typography>}
+        </Typography>
+        }
         <Typography variant="body2" component="div">
           {projects.map((item, i) => (
             <p key={i}>• {item}</p>
@@ -42,13 +45,14 @@ export default function ProjectCard(props) {
       <CardActions>
         {(website === null || website === "") ? null :
           <Button
-            variant="contained"
-            color="primary"
+            variant="outlined"
+            color="info"
             size="small"
             target="_blank"
             href={`${website}`}
+            sx={{textTransform: "capitalize"}}
           >
-            Website
+            Company Website
           </Button>
         }
       </CardActions>
