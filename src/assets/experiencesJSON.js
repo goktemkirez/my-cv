@@ -112,7 +112,7 @@ export const experiencesJSON = [
     website: "https://www.hogarth.com/",
     sorting: "87",
     responsibilities: [
-      "Frontend development of customers' websites and web apps",
+      "Frontend development of customers' websites and web applications",
     ],
     projects: [
     ],
