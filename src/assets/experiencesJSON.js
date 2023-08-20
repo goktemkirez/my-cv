@@ -52,8 +52,8 @@ export const experiencesJSON = [
     website: "http://temizisofset.com.tr/",
     sorting: "89",
     responsibilities: [
-      "Winform Application development with .NET Framework",
-      "MS SQL Server database management",
+      "Winform Application development (.NET Framework)",
+      "MS SQL Server",
       "Developing apps that will facilitate the operation in the company with Excel VBA",
       "Software, hardware and network support",
     ],
@@ -73,8 +73,8 @@ export const experiencesJSON = [
     website: "https://www.durak.com/",
     sorting: "88",
     responsibilities: [
-      "Web and mobile application development with .NET Framework, React Native etc..",
-      "Database management on MS SQL Server",
+      "Web and mobile application development (.NET Webforms, React.js, React Native, MUI, Git)",
+      "MS SQL Server",
       "Software, hardware and network support",
     ],
     projects: [
@@ -94,8 +94,8 @@ export const experiencesJSON = [
     website: "https://www.harputholding.com.tr/",
     sorting: "87",
     responsibilities: [
-      "Frontend development of projects (React.js)",
-      "Supporting to backend development processes of projects (.NET)",
+      "Frontend development (React.js, MUI, Git)",
+      "Supporting to backend development processes (.NET 6)",
     ],
     projects: [
       "Harput ERP (Enterprise Resource Planning)",
@@ -106,15 +106,42 @@ export const experiencesJSON = [
   {
     experienceID: 16,
     company: "Hogarth Worldwide",
-    date: "March 2023 - present",
+    date: "March 2023 - July 2023",
     title: "Frontend Developer",
     department: "Elementary Department",
     website: "https://www.hogarth.com/",
-    sorting: "87",
+    sorting: "86",
     responsibilities: [
-      "Frontend development of customers' websites and web applications",
+      "Frontend development of customers' websites and web applications (HTML, CSS, JS, Docker, SVN)",
     ],
+    projects: [],
+  },
+  {
+    experienceID: 18,
+    company: "",
+    date: "March 2023 - April 2023",
+    title: "Freelance Frontend Developer",
+    department: "",
+    website: "",
+    sorting: "85",
+    responsibilities: ["Frontend development (React, MUI, Typescript, JIRA, Git)"],
     projects: [
+      "A web project that offers Web 3.0 and Blockchain technologies and allows payment with crypto assets",
     ],
+  },
+  {
+    experienceID: 20,
+    company: "Proses Yazılım",
+    date: "July 2023 - present",
+    title: "Full Stack Developer",
+    department: "Software Development",
+    website: "https://www.prosesyazilim.com/",
+    sorting: "86",
+    responsibilities: [
+      "Frontend development (React.js, MUI, Git)",
+      "Web API development (.NET 6)",
+      "Table structures of applications (MS SQL, MySql)",
+    ],
+    projects: ["Product sales portal for a customer"],
   },
 ];

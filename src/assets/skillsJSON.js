@@ -2,13 +2,13 @@ export const skills = [
     {
         "id": 1,
         "name": "React.js",
-        "score": 3,
+        "score": 4,
         "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645796068/goktemkirez.com/skillsPageImages/react_uljxdk.png",
     },
     {
         "id": 2,
         "name": "JavaScript",
-        "score": 3,
+        "score": 4,
         "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645874074/goktemkirez.com/skillsPageImages/js_snxl0m.png",
     },
     {
