@@ -8,7 +8,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import { StyledAvatar } from "./Timeline.style";
-import noImage from "../../assets/images/noImage.png";
+// import noImage from "../../assets/images/noImage.png";
 
 import { personalJSON } from "../../assets/personalJSON";
 
