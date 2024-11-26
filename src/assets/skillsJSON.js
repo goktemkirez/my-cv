@@ -14,13 +14,13 @@ export const skills = [
     {
         "id": 3,
         "name": "React Native",
-        "score": 1,
+        "score": 2,
         "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645796460/goktemkirez.com/skillsPageImages/react-native_ruihqp.png",
     },
     {
         "id": 4,
         "name": "C#",
-        "score": 3,
+        "score": 4,
         "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645796634/goktemkirez.com/skillsPageImages/Csharp_vtca9f.png",
     },
     {
@@ -32,7 +32,7 @@ export const skills = [
     {
         "id": 6,
         "name": ".NET Framework",
-        "score": 3,
+        "score": 4,
         "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1645874074/goktemkirez.com/skillsPageImages/net_elifol.png",
     },
     {

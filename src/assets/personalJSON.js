@@ -1,5 +1,13 @@
 export const personalJSON = [
     {
+        "id": 21,
+        "date": "October 2023",
+        "title": "Job",
+        "area1": "Durak Tekstil",
+        "area2": ["Software Unit Manager | Full Stack Developer", "React.js, .NET 6", "Bursa"],
+        "img":"",
+    },
+    {
         "id": 20,
         "date": "July 2023",
         "title": "Job",

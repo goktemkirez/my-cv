@@ -132,7 +132,7 @@ export const experiencesJSON = [
   {
     experienceID: 20,
     company: "Proses Yazılım",
-    date: "July 2023 - present",
+    date: "July 2023 - September 2023",
     title: "Full Stack Developer",
     department: "Software Development",
     website: "https://www.prosesyazilim.com/",
@@ -143,5 +143,20 @@ export const experiencesJSON = [
       "Table structures of applications (MS SQL, MySql)",
     ],
     projects: ["Product sales portal for a customer"],
+  },
+  {
+    experienceID: 21,
+    company: "Durak Tekstil",
+    date: "October 2023 - present",
+    title: "Software Unit Manager",
+    department: "IT",
+    website: "https://www.durak.com/",
+    sorting: "87",
+    responsibilities: [
+      "Project Management",
+      "Organizing trainings for users",
+      "React.js, React Native, .NET 6, MSSQL",
+    ],
+    projects: ["DurakWeb", "BT Destek", "Durak App", "Dashboard Designer", "Meeting Room Scheduler"],
   },
 ];
