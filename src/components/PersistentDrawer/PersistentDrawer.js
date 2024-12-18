@@ -21,7 +21,6 @@ import {
     PersonOutlined,
     WorkOutlined,
     CodeOutlined,
-    PlusOneOutlined,
     ContactMailOutlined
   } from "@mui/icons-material";
   
@@ -124,14 +123,11 @@ export default function PersistentDrawer() {
 
     const itemsListBottom = [
       {
-        text: "Offer a Job",
-        icon: <PlusOneOutlined />,
-        onClick: () => alert("I'm working on it :)"),
-      },
-      {
         text: "Contact",
         icon: <ContactMailOutlined />,
-        onClick: () => alert("I'm working on it :)"),
+        onClick: () => {
+            window.location.href = "mailto:ogkirez@gmail.com";
+        },
       },
     ];
 
